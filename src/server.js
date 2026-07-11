@@ -1,11 +1,11 @@
 import express from "express";
-import foodLogRoutes from "./src/routes/foodLogRoute.js"
-import userDetailsRoute from "./src/routes/userDetailsRoute.js"
-import nutritionSumRoute from './src/routes/nutrtionSumRoute.js'
-import foodRecommendRoute from './src/routes/foodRecommendRoute.js'
+import foodLogRoutes from "./routes/foodLogRoute.js"
+import userDetailsRoute from "./routes/userDetailsRoute.js"
+import nutritionSumRoute from './routes/nutrtionSumRoute.js'
+import foodRecommendRoute from './routes/foodRecommendRoute.js'
 import mongoose from "mongoose";
 import cors from "cors";
-import "./src/config/firebaseAdmin.js"
+import "./config/firebaseAdmin.js"
 
 const app = express();
 app.use(express.json());
