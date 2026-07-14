@@ -6,13 +6,13 @@ import foodRecommendRoute from './routes/foodRecommendRoute.js'
 import mongoose from "mongoose";
 import cors from "cors";
 import "./config/firebaseAdmin.js"
-import { credential } from "firebase-admin";
+
 
 const app = express();
 app.use(express.json());
 app.use(cors({
   origin: `https://nutritrack-frontend-chi.vercel.app/`,
-  credential: true
+  credentials: true
 }
 ));
 
